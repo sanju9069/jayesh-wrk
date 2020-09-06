@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>ecomm app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -20,6 +20,52 @@
     />
   </head>
   <body>
+    <div class="headerMenu w-100">
+      <div class="row">
+        <div class="headerLeft">
+          <img
+            src="./images/arrow-left.svg"
+            alt="arrow-left"
+            class="img-fluid"
+          />
+          <span>Default Salesman</span>
+        </div>
+        <div class="headerRight">
+          <div style="position: relative;">
+            <img
+              src="./images/cart-img.png"
+              alt="arrow-left"
+              class="img-fluid"
+            />
+            <span class="headerCart">2</span>
+          </div>
+          <img
+            src="./images/hamburger.svg"
+            alt="arrow-left"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <!-- <div class="headerSearch row justify-content-between">
+        <div class="searchWrap">
+          <span>
+            <img
+              src="./images/searchMag.svg"
+              alt="searchMag"
+              class="img-fluid"
+              style="margin: auto;"
+            />
+          </span>
+          <input type="text" class="searchBox" placeholder="search..."/>
+        </div>
+        <img
+              src="./images/cook-white.svg"
+              alt="searchMag"
+              class="img-fluid"
+            />
+      </div> -->
+    </div>
     <div class="menuWrap w-100">
       <div class="headerPart">
         <h1>Whole Table</h1>
@@ -29,24 +75,127 @@
         data-url="test"
       >
         <div class="d-flex align-center">
-          <img src="./images/fries.jpg" alt="fries" class="img-fluid" />
+          <img
+            src="./images/fries.jpg"
+            alt="fries"
+            class="img-fluid rightIimg"
+          />
           <div class="tagName">
             Chicken Soup
             <p>AED 12.00</p>
           </div>
         </div>
-        <div class="d-flex align-center">
+        <div class="d-flex align-center rightDiv">
           <div class="checkOutCounter">
             <button class="minus">
-              <i class="fa fa-minus" aria-hidden="true"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 22 22"
+                width="16"
+                height="16"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: none;
+                  }
+                  .shp1 {
+                    fill: #ff572a;
+                  }
+                </style>
+                <g id="Group 1087">
+                  <path
+                    id="Rectangle 10"
+                    class="shp0"
+                    d="M23 -1L23 23L-1 23L-1 -1L23 -1Z"
+                  />
+                  <g id="plus">
+                    <g id="Group 1082">
+                      <g id="Group 1081">
+                        <path
+                          id="Path 23"
+                          fill-rule="evenodd"
+                          class="shp1"
+                          d="M22 11C22 17.07 17.07 22 11 22C4.93 22 0 17.07 0 11C0 4.93 4.93 0 11 0C17.07 0 22 4.93 22 11ZM20.43 11C20.43 5.8 16.2 1.57 11 1.57C5.8 1.57 1.57 5.8 1.57 11C1.57 16.2 5.8 20.43 11 20.43C16.2 20.43 20.43 16.2 20.43 11Z"
+                        />
+                      </g>
+                    </g>
+                    <g id="Group 1086">
+                      <g id="Group 1085">
+                        <path
+                          id="Path 25"
+                          class="shp1"
+                          d="M15.45 10.21L6.55 10.21C6.11 10.21 5.76 10.57 5.76 11C5.76 11.43 6.11 11.79 6.55 11.79L15.45 11.79C15.89 11.79 16.24 11.43 16.24 11C16.24 10.57 15.89 10.21 15.45 10.21Z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
             </button>
             <span class="cartVal">0</span>
             <button class="plus">
-              <i class="fa fa-plus" aria-hidden="true"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 22 22"
+                width="16"
+                height="16"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: none;
+                  }
+                  .shp1 {
+                    fill: #ff572a;
+                  }
+                </style>
+                <g id="Group 1087">
+                  <path
+                    id="Rectangle 10"
+                    class="shp0"
+                    d="M23 -1L23 23L-1 23L-1 -1L23 -1Z"
+                  />
+                  <g id="plus">
+                    <g id="Group 1082">
+                      <g id="Group 1081">
+                        <path
+                          id="Path 23"
+                          fill-rule="evenodd"
+                          class="shp1"
+                          d="M22 11C22 17.07 17.07 22 11 22C4.93 22 0 17.07 0 11C0 4.93 4.93 0 11 0C17.07 0 22 4.93 22 11ZM20.43 11C20.43 5.8 16.2 1.57 11 1.57C5.8 1.57 1.57 5.8 1.57 11C1.57 16.2 5.8 20.43 11 20.43C16.2 20.43 20.43 16.2 20.43 11Z"
+                        />
+                      </g>
+                    </g>
+                    <g id="Group 1084">
+                      <g id="Group 1083">
+                        <path
+                          id="Path 24"
+                          class="shp1"
+                          d="M11 5.76C10.57 5.76 10.21 6.11 10.21 6.55L10.21 15.45C10.21 15.89 10.57 16.24 11 16.24C11.43 16.24 11.79 15.89 11.79 15.45L11.79 6.55C11.79 6.11 11.43 5.76 11 5.76Z"
+                        />
+                      </g>
+                    </g>
+                    <g id="Group 1086">
+                      <g id="Group 1085">
+                        <path
+                          id="Path 25"
+                          class="shp1"
+                          d="M15.45 10.21L6.55 10.21C6.11 10.21 5.76 10.57 5.76 11C5.76 11.43 6.11 11.79 6.55 11.79L15.45 11.79C15.89 11.79 16.24 11.43 16.24 11C16.24 10.57 15.89 10.21 15.45 10.21Z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
             </button>
           </div>
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
-          <i class="fa fa-times closeBtnI" aria-hidden="true"></i>
+          <img src="./images/cook-color.svg" alt="fries" class="img-fluid" />
+          <img src="./images/closeIcon.svg" alt="fries" class="img-fluid" />
         </div>
       </div>
       <div
@@ -54,38 +203,141 @@
         data-url="test2"
       >
         <div class="d-flex align-center">
-          <img src="./images/fries.jpg" alt="fries" class="img-fluid" />
+          <img
+            src="./images/fries.jpg"
+            alt="fries"
+            class="img-fluid rightIimg"
+          />
           <div class="tagName">
             Chicken Soup
             <p>AED 8.00</p>
           </div>
         </div>
-        <div class="d-flex align-center">
+        <div class="d-flex align-center rightDiv">
           <div class="checkOutCounter">
             <button class="minus">
-              <i class="fa fa-minus" aria-hidden="true"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 22 22"
+                width="16"
+                height="16"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: none;
+                  }
+                  .shp1 {
+                    fill: #ff572a;
+                  }
+                </style>
+                <g id="Group 1087">
+                  <path
+                    id="Rectangle 10"
+                    class="shp0"
+                    d="M23 -1L23 23L-1 23L-1 -1L23 -1Z"
+                  />
+                  <g id="plus">
+                    <g id="Group 1082">
+                      <g id="Group 1081">
+                        <path
+                          id="Path 23"
+                          fill-rule="evenodd"
+                          class="shp1"
+                          d="M22 11C22 17.07 17.07 22 11 22C4.93 22 0 17.07 0 11C0 4.93 4.93 0 11 0C17.07 0 22 4.93 22 11ZM20.43 11C20.43 5.8 16.2 1.57 11 1.57C5.8 1.57 1.57 5.8 1.57 11C1.57 16.2 5.8 20.43 11 20.43C16.2 20.43 20.43 16.2 20.43 11Z"
+                        />
+                      </g>
+                    </g>
+                    <g id="Group 1086">
+                      <g id="Group 1085">
+                        <path
+                          id="Path 25"
+                          class="shp1"
+                          d="M15.45 10.21L6.55 10.21C6.11 10.21 5.76 10.57 5.76 11C5.76 11.43 6.11 11.79 6.55 11.79L15.45 11.79C15.89 11.79 16.24 11.43 16.24 11C16.24 10.57 15.89 10.21 15.45 10.21Z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
             </button>
             <span class="cartVal">0</span>
             <button class="plus">
-              <i class="fa fa-plus" aria-hidden="true"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 22 22"
+                width="16"
+                height="16"
+              >
+                <style>
+                  tspan {
+                    white-space: pre;
+                  }
+                  .shp0 {
+                    fill: none;
+                  }
+                  .shp1 {
+                    fill: #ff572a;
+                  }
+                </style>
+                <g id="Group 1087">
+                  <path
+                    id="Rectangle 10"
+                    class="shp0"
+                    d="M23 -1L23 23L-1 23L-1 -1L23 -1Z"
+                  />
+                  <g id="plus">
+                    <g id="Group 1082">
+                      <g id="Group 1081">
+                        <path
+                          id="Path 23"
+                          fill-rule="evenodd"
+                          class="shp1"
+                          d="M22 11C22 17.07 17.07 22 11 22C4.93 22 0 17.07 0 11C0 4.93 4.93 0 11 0C17.07 0 22 4.93 22 11ZM20.43 11C20.43 5.8 16.2 1.57 11 1.57C5.8 1.57 1.57 5.8 1.57 11C1.57 16.2 5.8 20.43 11 20.43C16.2 20.43 20.43 16.2 20.43 11Z"
+                        />
+                      </g>
+                    </g>
+                    <g id="Group 1084">
+                      <g id="Group 1083">
+                        <path
+                          id="Path 24"
+                          class="shp1"
+                          d="M11 5.76C10.57 5.76 10.21 6.11 10.21 6.55L10.21 15.45C10.21 15.89 10.57 16.24 11 16.24C11.43 16.24 11.79 15.89 11.79 15.45L11.79 6.55C11.79 6.11 11.43 5.76 11 5.76Z"
+                        />
+                      </g>
+                    </g>
+                    <g id="Group 1086">
+                      <g id="Group 1085">
+                        <path
+                          id="Path 25"
+                          class="shp1"
+                          d="M15.45 10.21L6.55 10.21C6.11 10.21 5.76 10.57 5.76 11C5.76 11.43 6.11 11.79 6.55 11.79L15.45 11.79C15.89 11.79 16.24 11.43 16.24 11C16.24 10.57 15.89 10.21 15.45 10.21Z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
             </button>
           </div>
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
-          <i class="fa fa-times closeBtnI" aria-hidden="true"></i>
+          <img src="./images/cook-color.svg" alt="fries" class="img-fluid" />
+          <img src="./images/closeIcon.svg" alt="fries" class="img-fluid" />
         </div>
       </div>
       <div class="checkOutFooter">
         <div class="row justify-content-between">
-            <span>subtotal</span>
-            <span>AED 56.00</span>
+          <span>subtotal</span>
+          <span>AED 56.00</span>
         </div>
         <div class="row justify-content-between">
-            <span>Tax</span>
-            <span>AED 56.00</span>
+          <span>Tax</span>
+          <span>AED 56.00</span>
         </div>
         <div class="finalTotal row justify-content-between">
-            <span>Total:</span>
-            <span>AED 58.80</span>
+          <span>Total:</span>
+          <span>AED 58.80</span>
         </div>
         <button class="w-100">Checkout</button>
       </div>

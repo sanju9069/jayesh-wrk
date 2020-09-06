@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<defs>
+		<image width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAI1QTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////A4szhQAAAC90Uk5TAD1lQFBgv7DAdcxw7xCgz8N/gNAwsv/GFUZSYbl3bF1MIgasqIuYHt+qtuPqmSSD2TW/AAAAi0lEQVR4nM2QyRKCMBAFnw6JKIIadXBHUXD3/z+P4ELpBC+e7GN3ZWYqwINGE+RBESRaoaXge05odxB0w6jnBPQHiEw4VE4gKpfQyH3yA2PmWLrJdDYPDPNiuUrWm0qnW/5glz5DxoK8ulSyt9bUYRu01nLSnXJUvf3bcPgWjtKfXt+bnd/15XqzrgA7ERoAvbmU0QAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="cook-white" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" width="24" height="25">
+	<defs>
+		<image width="24" height="25" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAMAAAAc9R5vAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAJ9QTFRFAAAA/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1Yq/1YqsN4JrwAAADV0Uk5TADg9ZTZtSr9goF1Tdcxj1CqXqsN/noFIQICPM7L/xhVGUmFwuXdsTCIGrKiLmB7ftuPqmSSTDnQDAAAAjUlEQVR4nM2Qxw7CQAwFH9UQWghtFzC9BULn/7+NBUFE7HDhxBxnZMsykCADSTaHfAFFHaiEsgeqqFCtod7wm4EKaLXR6frUU8EYGIv+QI/8wJB5JN14Mp3NLfNiufLWm1iHW06wC18hYsE+vlRycNam4RqISG568liVbv82HL+FQPrT+73R+VNfrjfn7mw2I9NFBnrQAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="cook-color" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
