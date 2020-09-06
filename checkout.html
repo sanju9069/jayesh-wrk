@@ -18,8 +18,20 @@
       media="screen"
       href="./css/main.css"
     />
+    <style>
+      .hamMenu{
+        top: 71px;
+      }
+    </style>
   </head>
   <body>
+    <div class="overLay"></div>
+    <div class="hamMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
     <div class="headerMenu w-100">
       <div class="row">
         <div class="headerLeft">
@@ -42,31 +54,23 @@
           <img
             src="./images/hamburger.svg"
             alt="arrow-left"
-            class="img-fluid"
+            class="img-fluid hamBurBtn"
           />
         </div>
       </div>
 
-      <!-- <div class="headerSearch row justify-content-between">
-        <div class="searchWrap">
-          <span>
-            <img
-              src="./images/searchMag.svg"
-              alt="searchMag"
-              class="img-fluid"
-              style="margin: auto;"
-            />
-          </span>
-          <input type="text" class="searchBox" placeholder="search..."/>
-        </div>
-        <img
-              src="./images/cook-white.svg"
-              alt="searchMag"
-              class="img-fluid"
-            />
-      </div> -->
+      
     </div>
     <div class="menuWrap w-100">
+      <div class="headerPart">
+        <img
+          src="./images/arrow-right.png"
+          alt="fries"
+          class="img-fluid"
+          style="transform: rotate(180deg)"
+        />
+        <span>Back to Home</span>
+      </div>
       <div class="headerPart">
         <h1>Whole Table</h1>
       </div>
@@ -347,6 +351,21 @@
       let minus = document.querySelectorAll(".minus");
       let plus = document.querySelectorAll(".plus");
       let currentCartVal = 0;
+      let overLay = document.querySelector(".overLay");
+      let backToCat = document.querySelector(".headerPart");
+      let hamBurBtn = document.querySelector(".hamBurBtn");
+      let hamMenu = document.querySelector(".hamMenu");
+
+      const openMenu = () =>{
+        overLay.style.display = "block";
+        hamMenu.classList.add("openHamMenu");
+      }
+      const closeMenu = () =>{
+        overLay.style.display = "none";
+        hamMenu.classList.remove("openHamMenu");
+      }
+      hamBurBtn.addEventListener("click", openMenu);
+      overLay.addEventListener("click", closeMenu);
 
       const increment = (e) => {
         currentCartVal++;
@@ -368,6 +387,11 @@
       minus.forEach((element) => {
         element.addEventListener("click", decrement);
       });
+
+      const goBack = (e) => {
+        window.location.href = "index.html";
+      };
+      backToCat.addEventListener("click", goBack);
     </script>
   </body>
 </html>

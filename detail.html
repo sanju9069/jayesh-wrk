@@ -21,6 +21,12 @@
   </head>
   <body>
     <div class="overLay"></div>
+    <div class="hamMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
     <div class="popUp">
       <div class="headerPop row justify-content-between">
         <div class="d-flex align-center">
@@ -180,7 +186,7 @@
           <img
             src="./images/hamburger.svg"
             alt="arrow-left"
-            class="img-fluid"
+            class="img-fluid hamBurBtn"
           />
         </div>
       </div>
@@ -367,6 +373,19 @@
       let minus = document.querySelector(".minus");
       let plus = document.querySelector(".plus");
       let confirmBtn = document.querySelector(".confirmBtn");
+      let hamBurBtn = document.querySelector(".hamBurBtn");
+      let hamMenu = document.querySelector(".hamMenu");
+
+      const openMenu = () =>{
+        overLay.style.display = "block";
+        hamMenu.classList.add("openHamMenu");
+      }
+      const closeMenu = () =>{
+        overLay.style.display = "none";
+        hamMenu.classList.remove("openHamMenu");
+      }
+      hamBurBtn.addEventListener("click", openMenu);
+      overLay.addEventListener("click", closeMenu);
 
       let currentCartVal = 0;
 

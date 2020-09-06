@@ -20,6 +20,13 @@
     />
   </head>
   <body>
+    <div class="overLay"></div>
+    <div class="hamMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
     <div class="headerMenu w-100">
       <div class="row">
         <div class="headerLeft">
@@ -42,7 +49,7 @@
           <img
             src="./images/hamburger.svg"
             alt="arrow-left"
-            class="img-fluid"
+            class="img-fluid hamBurBtn"
           />
         </div>
       </div>
@@ -114,14 +121,29 @@
     </div>
     <script>
       let wrapClick = document.querySelectorAll(".tagsWrap");
+      let hamBurBtn = document.querySelector(".hamBurBtn");
+      let hamMenu = document.querySelector(".hamMenu");
+      let overLay = document.querySelector(".overLay");
+      
       const getUrl = (e) => {
         let attribute = e.target.getAttribute("data-url");
         console.log(attribute);
         window.location.href = "detail.html";
       };
+      const openMenu = () =>{
+        overLay.style.display = "block";
+        hamMenu.classList.add("openHamMenu");
+      }
+      const closeMenu = () =>{
+        overLay.style.display = "none";
+        hamMenu.classList.remove("openHamMenu");
+        
+      }
       wrapClick.forEach(function (element) {
         element.addEventListener("click", getUrl);
       });
+      hamBurBtn.addEventListener("click", openMenu);
+      overLay.addEventListener("click", closeMenu);
     </script>
   </body>
 </html>
