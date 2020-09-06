@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ecomm app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/main.css"
+    />
+  </head>
+  <body>
+    <div class="menuWrap w-100">
+      <div class="headerPart">
+        <h1>Whole Table</h1>
+      </div>
+      <div
+        class="row justify-content-between tagsWrap checkoutPage"
+        data-url="test"
+      >
+        <div class="d-flex align-center">
+          <img src="/images/fries.jpg" alt="fries" class="img-fluid" />
+          <div class="tagName">
+            Chicken Soup
+            <p>AED 12.00</p>
+          </div>
+        </div>
+        <div class="d-flex align-center">
+          <div class="checkOutCounter">
+            <button class="minus">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+            <span class="cartVal">0</span>
+            <button class="plus">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <i class="fa fa-times closeBtnI" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div
+        class="row justify-content-between tagsWrap checkoutPage"
+        data-url="test2"
+      >
+        <div class="d-flex align-center">
+          <img src="/images/fries.jpg" alt="fries" class="img-fluid" />
+          <div class="tagName">
+            Chicken Soup
+            <p>AED 8.00</p>
+          </div>
+        </div>
+        <div class="d-flex align-center">
+          <div class="checkOutCounter">
+            <button class="minus">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+            <span class="cartVal">0</span>
+            <button class="plus">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <i class="fa fa-times closeBtnI" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="checkOutFooter">
+        <div class="row justify-content-between">
+            <span>subtotal</span>
+            <span>AED 56.00</span>
+        </div>
+        <div class="row justify-content-between">
+            <span>Tax</span>
+            <span>AED 56.00</span>
+        </div>
+        <div class="finalTotal row justify-content-between">
+            <span>Total:</span>
+            <span>AED 58.80</span>
+        </div>
+        <button class="w-100">Checkout</button>
+      </div>
+    </div>
+    <script>
+      let cartVal = document.querySelector(".cartVal");
+      let minus = document.querySelectorAll(".minus");
+      let plus = document.querySelectorAll(".plus");
+      let currentCartVal = 0;
+
+      const increment = (e) => {
+        currentCartVal++;
+        cartVal.innerHTML = currentCartVal;
+      };
+      const decrement = (e) => {
+        if (currentCartVal <= 0) {
+          currentCartVal = 0;
+        } else {
+          currentCartVal--;
+          cartVal.innerHTML = currentCartVal;
+        }
+      };
+
+      plus.forEach(function (element) {
+        element.addEventListener("click", increment);
+      });
+
+      minus.forEach((element) => {
+        element.addEventListener("click", decrement);
+      });
+    </script>
+  </body>
+</html>
