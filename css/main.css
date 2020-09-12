@@ -37,19 +37,24 @@
 /* hamburger menu css */
 .hamMenu{
   position: fixed;
-  left: -70%;
-  top: 127px;
+  right: -70%;
+  top: 0px;
   z-index: 2;
   width: 70%;
   height: 100%;
   background: #ff572a;
   transition: 0.3s;
+  padding-top: 4rem;
 }
 .openHamMenu{
-  left: 0%;
+  right: 0%;
 }
-.hamMenu ul{
-
+.closeIconMenu{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
 }
 .hamMenu ul>li{
   list-style-type: none;
