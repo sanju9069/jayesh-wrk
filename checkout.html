@@ -18,15 +18,37 @@
       media="screen"
       href="./css/main.css"
     />
-    <style>
-      .hamMenu{
-        top: 71px;
-      }
-    </style>
   </head>
   <body>
     <div class="overLay"></div>
     <div class="hamMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="35" height="35" class="closeIconMenu">
+        <style>
+          tspan { white-space:pre }
+          .shp0 { fill: none } 
+          .shp4 { fill: #ffffff } 
+        </style>
+        <g id="Group 1087">
+          <path id="Rectangle 10" class="shp0" d="M23 -1L23 23L-1 23L-1 -1L23 -1Z" />
+          <g id="plus">
+            <g id="Group 1082">
+              <g id="Group 1081">
+                <path id="Path 23" fill-rule="evenodd" class="shp4" d="M22 11C22 17.07 17.07 22 11 22C4.93 22 0 17.07 0 11C0 4.93 4.93 0 11 0C17.07 0 22 4.93 22 11ZM20.43 11C20.43 5.8 16.2 1.57 11 1.57C5.8 1.57 1.57 5.8 1.57 11C1.57 16.2 5.8 20.43 11 20.43C16.2 20.43 20.43 16.2 20.43 11Z" />
+              </g>
+            </g>
+            <g id="Group 1084">
+              <g id="Group 1083">
+                <path id="Path 24" class="shp4" d="M7.3 7.3C6.99 7.6 6.99 8.1 7.3 8.41L13.59 14.7C13.9 15.01 14.4 15.01 14.7 14.7C15.01 14.4 15.01 13.9 14.7 13.59L8.41 7.3C8.1 6.99 7.6 6.99 7.3 7.3Z" />
+              </g>
+            </g>
+            <g id="Group 1086">
+              <g id="Group 1085">
+                <path id="Path 25" class="shp4" d="M13.59 7.3L7.3 13.59C6.99 13.9 6.99 14.4 7.3 14.7C7.6 15.01 8.1 15.01 8.41 14.7L14.7 8.41C15.01 8.1 15.01 7.6 14.7 7.3C14.4 6.99 13.9 6.99 13.59 7.3Z" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="checkout.html">Checkout</a></li>
@@ -355,6 +377,8 @@
       let backToCat = document.querySelector(".headerPart");
       let hamBurBtn = document.querySelector(".hamBurBtn");
       let hamMenu = document.querySelector(".hamMenu");
+      let closeIconMenu = document.querySelector(".closeIconMenu");
+      
 
       const openMenu = () =>{
         overLay.style.display = "block";
@@ -365,7 +389,7 @@
         hamMenu.classList.remove("openHamMenu");
       }
       hamBurBtn.addEventListener("click", openMenu);
-      overLay.addEventListener("click", closeMenu);
+      closeIconMenu.addEventListener("click", closeMenu);
 
       const increment = (e) => {
         currentCartVal++;
